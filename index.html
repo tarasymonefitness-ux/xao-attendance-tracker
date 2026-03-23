@@ -58,9 +58,9 @@
             <p>Alpha Kappa Alpha Sorority, Incorporated — Xi Alpha Omega Chapter</p>
         </div>
         <div class="stats">
-            <div class="stat-card"><div class="stat-num">513</div><div class="stat-label">Financial Members</div></div>
+            <div class="stat-card"><div class="stat-num">514</div><div class="stat-label">Financial Members</div></div>
             <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Meetings Tracked</div></div>
-            <div class="stat-card"><div class="stat-num">411</div><div class="stat-label">January</div></div>
+            <div class="stat-card"><div class="stat-num">412</div><div class="stat-label">January</div></div>
             <div class="stat-card"><div class="stat-num">262</div><div class="stat-label">February</div></div>
             <div class="stat-card"><div class="stat-num">273</div><div class="stat-label">March</div></div>
         </div>
@@ -70,7 +70,7 @@
             <button class="btn btn-filter" onclick="filterAttended('present')" id="btnPresent">Present (Any)</button>
             <button class="btn btn-filter" onclick="filterAttended('absent')" id="btnAbsent">Absent (All)</button>
             <button class="btn btn-download" onclick="downloadCSV()">📥 Download CSV</button>
-            <div class="results-info" id="resultsInfo">Showing all 513 members</div>
+            <div class="results-info" id="resultsInfo">Showing all 514 members</div>
         </div>
         <div class="table-wrap">
             <table>
@@ -5531,6 +5531,20 @@
                         <td><strong>3/3</strong></td>
                     </tr>
                     <tr>
+                        <td>Riochi Giles</td>
+                        <td><span class="check">✓</span></td>
+                        <td><span class="x">✗</span></td>
+                        <td><span class="x">✗</span></td>
+                        <td><span class="x">—</span></td>
+                        <td><span class="x">—</span></td>
+                        <td><span class="x">—</span></td>
+                        <td><span class="x">—</span></td>
+                        <td><span class="x">—</span></td>
+                        <td><span class="x">—</span></td>
+                        <td><span class="x">—</span></td>
+                        <td><strong>1/3</strong></td>
+                    </tr>
+                    <tr>
                         <td>Robin Griffin</td>
                         <td><span class="check">✓</span></td>
                         <td><span class="check">✓</span></td>
@@ -7267,7 +7281,7 @@
                         <td><strong>3/3</strong></td>
                     </tr>
                     <tr class="total-row" id="totalsRow">
-                        <td>TOTAL</td><td>411</td><td>262</td><td>273</td>
+                        <td>TOTAL</td><td>412</td><td>262</td><td>273</td>
                         <td>—</td><td>—</td><td>—</td>
                         <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
                     </tr>
@@ -7299,7 +7313,7 @@
                 if (matchesSearch && matchesFilter) { row.style.display = ''; count++; }
                 else { row.style.display = 'none'; }
             });
-            document.getElementById('resultsInfo').textContent = count === 513 ? 'Showing all 513 members' : 'Showing ' + count + ' of 513 members';
+            document.getElementById('resultsInfo').textContent = count === 514 ? 'Showing all 514 members' : 'Showing ' + count + ' of 514 members';
         }
         function filterAttended(filter) {
             currentFilter = filter;
